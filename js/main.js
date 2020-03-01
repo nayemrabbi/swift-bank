@@ -34,9 +34,9 @@ function updateStatus(id, addedNumber) {
 //Withdraw button even handler
 const withdrawBtn = document.getElementById("addWithdraw");
 withdrawBtn.addEventListener("click", function() {
-  const withdraNumber = getInputNumber("withdrawAmount");
-  updateStatus("currentWithdraw", withdraNumber);
-  updateStatus("currentBalance", -1 * withdraNumber);
+  const withdrawNumber = getInputNumber("withdrawAmount");
+  updateStatus("currentWithdraw", withdrawNumber);
+  updateStatus("currentBalance", -1 * withdrawNumber);
 
   document.getElementById("withdrawAmount").value = "";
 });
