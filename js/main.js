@@ -35,6 +35,7 @@ function updateStatus(id, addedNumber) {
 const withdrawBtn = document.getElementById("addWithdraw");
 withdrawBtn.addEventListener("click", function() {
   const withdrawNumber = getInputNumber("withdrawAmount");
+
   updateStatus("currentWithdraw", withdrawNumber);
   updateStatus("currentBalance", -1 * withdrawNumber);
 
