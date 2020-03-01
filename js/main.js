@@ -23,10 +23,10 @@ depositBtn.addEventListener("click", function() {
   //   document.getElementById("currentDeposit").innerText = totalDeposit;
 });
 
-function updateStatus(id, depositNumber) {
+function updateStatus(id, addedNumber) {
   const current = document.getElementById(id).innerText;
   const currentNumber = parseFloat(current);
-  const totalAmount = depositNumber + currentNumber;
+  const totalAmount = addedNumber + currentNumber;
   document.getElementById(id).innerText = totalAmount;
 }
 // Deposit button event handler End.
@@ -40,6 +40,8 @@ withdrawBtn.addEventListener("click", function() {
 
   document.getElementById("withdrawAmount").value = "";
 });
+
+// Input button handler function area
 
 function getInputNumber(id) {
   const Amount = document.getElementById(id).value;
